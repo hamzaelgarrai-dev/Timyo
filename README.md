@@ -130,14 +130,17 @@ php artisan key:generate
 
 Configurer la base de données dans .env :
 
-DB_DATABASE=appointments
+DB_DATABASE=Timyo
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 
 Sanctum (SPA mode) :
 
 SANCTUM_STATEFUL_DOMAINS=localhost:5173
+
 SESSION_DOMAIN=localhost
 
 
