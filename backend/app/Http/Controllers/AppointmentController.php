@@ -13,7 +13,8 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        //
+        $rdv = Appointment::all();
+        
     }
 
     /**

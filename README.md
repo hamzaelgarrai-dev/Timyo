@@ -130,14 +130,17 @@ php artisan key:generate
 
 Configurer la base de données dans .env :
 
-DB_DATABASE=appointments
+DB_DATABASE=Timyo
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 
 Sanctum (SPA mode) :
 
 SANCTUM_STATEFUL_DOMAINS=localhost:5173
+
 SESSION_DOMAIN=localhost
 
 
@@ -169,23 +172,6 @@ Les requêtes suivantes sont automatiquement authentifiées
 
 GET /api/user retourne l’utilisateur connecté
 
-📦 7. API Endpoints (Résumé)
-🔑 Auth
-Méthode	Endpoint	Description
-GET	/sanctum/csrf-cookie	CSRF init
-POST	/login	Connexion
-POST	/logout	Déconnexion
-POST	/register	Inscription
-📅 Appointments (User)
-Méthode	Endpoint	Description
-GET	/appointments/me	Mes rendez-vous
-POST	/appointments	Créer
-PATCH	/appointments/{id}/cancel	Annuler
-🛠️ Admin
-Méthode	Endpoint	Description
-GET	/admin/appointments	Tous les rendez-vous
-PATCH	/admin/appointments/{id}/status	Approuver / Rejeter
-GET	/admin/users	Liste utilisateurs
 🧪 8. Tests
 Backend – PHPUnit
 
